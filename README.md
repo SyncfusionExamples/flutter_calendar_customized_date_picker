@@ -1,6 +1,6 @@
-# How to customize the data picker in Flutter Calendar using a custom header?
+# How to customize the data picker in Flutter Calendar using a custom header button?
 
-This repository contains a sample to customize the data picker on a [Syncfusion Flutter Calendar](https://help.syncfusion.com/flutter/calendar/getting-started) widget using a custom header.
+This repository contains a sample to customize the data picker on a [Syncfusion Flutter Calendar](https://help.syncfusion.com/flutter/calendar/getting-started) widget using a custom header button.
 
 Please refer the KB through this [link](https://support.syncfusion.com/agent/kb/17829).
 
