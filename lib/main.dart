@@ -6,30 +6,30 @@ import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import 'package:syncfusion_flutter_core/theme.dart';
 
 void main() {
-  runApp(const CustomDatePicker());
+  runApp(const MyApp());
 }
 
-class CustomDatePicker extends StatelessWidget {
-  const CustomDatePicker({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: CustomizedDatePicker(),
+      home: CustomDatePicker(),
     );
   }
 }
 
-class CustomizedDatePicker extends StatefulWidget {
-  const CustomizedDatePicker({super.key});
+class CustomDatePicker extends StatefulWidget {
+  const CustomDatePicker({super.key});
 
   @override
-  State<CustomizedDatePicker> createState() => _CustomizedDatePickerState();
+  State<CustomDatePicker> createState() => _CustomDatePickerState();
 }
 
-class _CustomizedDatePickerState extends State<CustomizedDatePicker> {
+class _CustomDatePickerState extends State<CustomDatePicker> {
   CalendarController controller = CalendarController();
   DateRangePickerController datePickerController = DateRangePickerController();
   String? _headerText;
@@ -67,7 +67,9 @@ class _CustomizedDatePickerState extends State<CustomizedDatePicker> {
                                 backgroundColor: Colors.white,
                                 headerBackgroundColor: Colors.white,
                                 todayCellTextStyle: TextStyle(
-                                    color: Colors.black, fontSize: 20),
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                ),
                                 selectionColor: Color.fromRGBO(35, 188, 1, 1),
                                 todayTextStyle: TextStyle(
                                   color: Color.fromRGBO(35, 188, 1, 1),
